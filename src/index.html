@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./style/reset.css">
+	<link rel="stylesheet" href="./style/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jogo da MEMORIA</title>
+</head>
+
+<body>
+	<header>
+		<h1>JOGO DA MEMORIA</h1>
+		<p class="timer">TEMPO: <span id="time">60</span> s</p>
+		<button class="btnstart" id="startButton">Iniciar Timer</button>
+	</header>
+	<div class="conteiner">
+
+		<div class="game">
+
+		</div>
+		<button class="btn__reset" onclick="location.reload()">reset game</button>
+	</div>
+	<div id="winModal" class="modal">
+		<div class="modal-content">
+			<span class="close-button">&times;</span>
+			<h2>Você ganhou!</h2>
+			<p class="time__game">Seu tempo foi de: <span id="finalTime"></span> segundos.</p>
+			<p class="time__rest">Tempo restante: <span id="remainingTime"></span> segundos.</p>
+			<p class="score">Sua pontuação: <span id="finalScore"></span> pontos.</p>
+		</div>
+	</div>
+</body>
+<script src="./js/main.js"></script>
+
+</html>
